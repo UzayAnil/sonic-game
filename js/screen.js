@@ -7,8 +7,7 @@ gameScreenOne = {
     this.canvas.width = screenW;
     this.canvas.height = screenH;
     this.canvas.style.display = "block"
-    this.canvas.style.marginLeft = "auto";
-    this.canvas.style.marginRight = "auto";
+    
     this.canvas.x = 0;
     this.canvas.y = 0;
     this.canvas.style.background = 'lightblue'
@@ -22,7 +21,22 @@ gameScreenOne = {
         window.addEventListener('keyup', function (e) {
             gameScreenOne.keys[e.keyCode] = (e.type == "keydown");
           })
+    window.addEventListener('mousedown', function (e) {
+            //gameScreenOne.x = e.pageX;
+            //gameScreenOne.y = e.pageY;
+        })
+        window.addEventListener('mouseup', function (e) {
+            //gameScreenOne.x = false;
+            //gameScreenOne.y = false;
+        })
+        $("canvas").on("tap",function(e){
 
+            gameScreenOne.x = e.pageX;
+            gameScreenOne.y = e.pageY;
+            console.log(gameScreenOne.x)
+          console.log(gameScreenOne.y)
+        
+        });
     /* single key press
     window.addEventListener('keydown', function(e) {
       gameScreenOne.key = e.keyCode;
@@ -30,10 +44,12 @@ gameScreenOne = {
     window.addEventListener('keyup', function(e) {
       gameScreenOne.key = false;
     })
+  
     */
   },
   run() {
     runIt = true;
+    
     //console.time("test")//test for browser timing
     render()
   },

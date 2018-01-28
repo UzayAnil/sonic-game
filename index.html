@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<style type="text/css">
+	#game-over {
 
+		font-size: 100px;
+		color: red;
+		margin-left: 20%;
+		visibility: hidden;
+	}
+	#strt-over {
+		width: 500px;
+		height: 500px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(100, 200, 200, .8);
+	}
+</style>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
 <body>
 
 <script type="text/javascript" src="js/rAF.js"></script> <!--the rAF shim-->
-<script type="text/javascript" src="js/render.js"></script> <!-- the render functin and screen variables -->
 <script type="text/javascript" src="js/elements.js"></script> <!-- the html elements appended with jscript -->
+<script type="text/javascript" src="js/render.js"></script> <!-- the render functin and screen variables -->
+
 <script type="text/javascript" src="js/screen.js"></script> <!-- the constructor for the screen object -->
 <script type="text/javascript" src="js/sprites.js"></script> <!-- the constructors for the animation objects -->
 <script type="text/javascript" src="js/app.js"></script>
+
 </body>
 </html>

@@ -11,17 +11,31 @@ elements = () => {
 	const br = document.createElement('br')
 	playBtn.style.display = "none"
 	pauseBtn.style.display = "inline-block"
+	gameOver = document.createElement('div')
+    gameOver.setAttribute('id', 'game-over')
+    gameOver.innerHTML = "GAME OVER"
+    const startOverScreen = document.createElement('div')
+    startOverScreen.setAttribute('id', 'strt-over')
+    
+
 	const controls = document.createElement('div')
+	const h1 = document.createElement('h1')
+    
+    //h1.style.display = "none"
 	controls.style.marginLeft = "auto";
 	controls.style.marginRight = "auto";
 	controls.style.width = gameScreenOne.canvas.width + "px" ;
-//	document.body.appendChild(br)
+	document.body.appendChild(br)
 	document.body.appendChild(controls)
 	controls.appendChild(startOverBtn)
 	controls.appendChild(playBtn)
 	controls.appendChild(pauseBtn)
+	//controls.appendChild(h1)
+    //controls.appendChild(gameOver)
 	startOverBtn.addEventListener('click', function() {
+		
     location.reload()
+
 
   })
   pauseBtn.addEventListener('click', () => {
