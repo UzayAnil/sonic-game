@@ -3,7 +3,7 @@
 //starting variables
 myCoins = [];
 enemies = [];
-screenW = 50 * 16;
+screenW = screen.width;
 screenH = 50 * 9;
 sonicBottom = (screenH - 80 - 55)
 ground = (screenH - 55)
