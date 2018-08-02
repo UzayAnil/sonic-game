@@ -4,7 +4,7 @@
 myCoins = [];
 enemies = [];
 screenW = screen.width;
-screenH = 50 * 9;
+screenH = screen.height;
 sonicBottom = (screenH - 80 - 55)
 ground = (screenH - 55)
 crash = false
