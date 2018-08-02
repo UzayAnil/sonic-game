@@ -6,8 +6,8 @@ gameScreenOne = {
   init() {
     this.canvas.width = screenW;
     this.canvas.height = screenH;
-    this.canvas.style.display = "block"
-    
+    this.canvas.style.display = "block";
+    this.canvas.style.margin = "auto";
     this.canvas.x = 0;
     this.canvas.y = 0;
     this.canvas.style.background = 'lightblue'
